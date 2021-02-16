@@ -9,7 +9,9 @@ O objetivo desse desafio é criar o controle de um Petshop.
 2 - Solicitar ao usuário o que ele quer fazer (utilizando o inquirer). As opções são listadas abaixo (500 pontos):
 
   ● Cadastrar novo pet
+  
   ● Listar todos os pets cadastrados
+  
   ● Buscar pet por nome
  
 3 - Os pets cadastrados devem ser salvos em um arquivo em formato JSON (1000 pontos).
