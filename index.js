@@ -2,7 +2,7 @@ const inquirer = require('inquirer');
 const {questions, registering, petSearch} = require('./data');
 const fs = require('fs');
 
-
+//Método construtor
 
 function animais(identificador, nomeDoPet, nomeDoDono, racaDoPet){
     this.identificador = identificador;
@@ -10,6 +10,8 @@ function animais(identificador, nomeDoPet, nomeDoDono, racaDoPet){
     this.racaDoPet = racaDoPet;
     this.nomeDoDono = nomeDoDono;
 }
+
+//Método para pesquisar pet pelo nome
 
 function search(nomeDoPet, pets){
     for (pet in pets){
@@ -19,6 +21,22 @@ function search(nomeDoPet, pets){
     }
 
 }
+
+//Método Principal
+
+//Primeiro lê o arquivo registeredPets.json
+//Os dados contidos no arquivo são convertidos em um objeto literal e salvos na variável json;
+//Por meio do inquirer, o software consulta se o usuário deseja cadastrar novo pet, listar os pets cadastrados ou pesquisar um pet pelo nome;
+
+//Se o usuário escolher cadastrar novo pet, utilizando o inquirer, são solicitados do usuário os parâmetros "nomeDoPet", "racaDoPet" e "nomeDoDono".
+//Para obter o identificador - quarto parâmetro necessário para o método construtor - o software verifica o tamanho do array de objetos literais que foram obtidos
+//do arquivo registeredPets.json e acrescenta + 1. Dessa forma, o identificador não será repetido e os registros são organizados de forma crescente.
+//O objeto cadastrado (novo pet) é incluído na lista de pets já existentes, convertido em formato json e sobrescrito no arquivo registeredPets.json
+
+//se o usuário escolher listar os pets cadastrados, o software imprime na tela o conteudo do arquivo registeredPets.json, convertido para objeto literal.
+
+//se o usuário escolher pesquisar pelo nome do pet, a função search percorre os objetos do array contido no arquivo registeredPets.json, convertido 
+//em objeto literal até encontrar o nome do pet.
 
 function main(){
     
