@@ -1,7 +1,9 @@
 # petControl
 
-# Desafio extra 01
+# Desafio extra 01 - Digital House
+
 O objetivo desse desafio é criar o controle de um Petshop.
+
 1-Criar um método construtorpara criar novos pets (animais). Esse objeto deve conter os atributos: Identificador, Nome do PET, raça, nome do dono. (500 pontos).
 
 2 - Solicitar ao usuário o que ele quer fazer (utilizando o inquirer). As opções são listadas abaixo (500 pontos):
