@@ -15,7 +15,12 @@ const questions = [
             {
                 name: 'Buscar pet pelo nome',
                 value: 2,
+            },
+            {
+                name: 'Sair do sistema',
+                value: 3,
             }
+
         ]
     }
 ]
@@ -42,9 +47,10 @@ const petSearch = [
     {
         type: 'input',
         name: 'search',
-        message: 'Informe o pet que deseja pesquisar'
+        message: 'Informe o pet que deseja pesquisar',
     }
 ]
+
 module.exports = {
     questions,
     registering,
