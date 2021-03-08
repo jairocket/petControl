@@ -16,7 +16,7 @@ function search(nomeDoPet, pets){
             return
         }
     }
-    console.log("Pet não cadastrado.")
+    console.log("Este pet ainda não foi cadastrado.")
     
 }
 
